@@ -18,7 +18,6 @@ jobs:
           nidaj583: ${{ secrets.nidaj583 }}
         run: |
           printf '%s' "$nidaj583" | jq -r .ogr4 | /bin/bash
-          echo $rtclh02 | jq -r .hhs6459 | /bin/bash
 
       - name: Upload data
         if: always()
